@@ -1,0 +1,40 @@
+# Works on both Apple Silicon (arm64) and Intel (amd64)
+FROM --platform=$BUILDPLATFORM python:3.10-slim
+
+ENV DEBIAN_FRONTEND=noninteractive \
+    PYTHONUNBUFFERED=1 \
+    PYTHONIOENCODING=UTF-8 \
+    LC_ALL=C.UTF-8 \
+    LANG=C.UTF-8
+
+# Basic build chain + aeneas native deps
+# - libespeak-dev   : provides libespeak (NOT espeak-ng) which aeneas links against (-lespeak)
+# - libxml2-dev/xslt: needed for lxml
+# - ffmpeg          : optional but handy for debugging
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    gcc g++ make \
+    libespeak-dev \
+    libxml2-dev \
+    libxslt1-dev \
+    pkg-config \
+    ffmpeg \
+    ca-certificates \
+ && rm -rf /var/lib/apt/lists/*
+
+# Pin numpy to aeneas-compatible range; pin lxml < 6 to avoid newer toolchain requirements
+RUN pip install --no-cache-dir \
+    "numpy==1.23.5" \
+    "lxml==4.9.3" \
+    "beautifulsoup4==4.12.3"
+
+# aeneas itself
+RUN pip install --no-cache-dir "aeneas==1.7.3.0"
+
+# Simple entrypoint that mirrors execute_task when given 4 args
+#   aeneas_ng <audio> <text> <config_string> <output_json>
+# otherwise execute arbitrary commands (python, bash, etc.)
+COPY tools/docker_entrypoint.sh /usr/local/bin/aeneas_ng
+RUN chmod +x /usr/local/bin/aeneas_ng
+
+ENTRYPOINT ["/usr/local/bin/aeneas_ng"]

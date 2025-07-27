@@ -1,0 +1,26 @@
+# Python dependencies for the automated vertical video generator
+#
+# Install these packages with:
+#   pip install -r requirements.txt
+#
+# Note: FFmpeg is required by MoviePy but must be installed separately
+# and be available on your system PATH. See README.md for instructions.
+
+PySide6>=6.5,<7.0
+# Pin MoviePy to the 1.x series.  MoviePy 2.x removed the ``editor`` module
+# and introduced breaking API changes.  Version 1.0.3 is the latest
+# release compatible with the current code.
+moviepy<2.0
+pyttsx3>=2.90
+numpy>=1.23
+# Pillow 10.0 removed the Image.ANTIALIAS constant used internally by
+# MoviePy's resize function.  To avoid AttributeError: module 'PIL.Image'
+# has no attribute 'ANTIALIAS', we pin Pillow below version 10.
+Pillow>=8.0,<10.0
+
+# striprtf is used to convert RTF-formatted scripts into plain text.  Without
+# this dependency, scripts containing RTF markup (e.g. exported from TextEdit or
+# Word) will cause the speech synthesis to fail because of unescaped braces and
+# control words.  If you cannot install this package, ensure your scripts are
+# saved as plain text.
+striprtf>=0.0.29
