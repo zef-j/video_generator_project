@@ -1,0 +1,13 @@
+[93m[WARN] The default input encoding is not UTF-8.[0m
+[93m[WARN] You might want to set 'PYTHONIOENCODING=UTF-8' in your shell.[0m
+[93m[WARN] The default output encoding is not UTF-8.[0m
+[93m[WARN] You might want to set 'PYTHONIOENCODING=UTF-8' in your shell.[0m
+[INFO] Validating config string (specify --skip-validator to bypass)...
+[INFO] Validating config string... done
+[INFO] Creating task...
+[INFO] Creating task... done
+[INFO] Executing task...
+[INFO] Executing task... done
+[INFO] Creating output sync map file...
+[INFO] Creating output sync map file... done
+[92m[INFO] Created file '/work/alignment.json'[0m

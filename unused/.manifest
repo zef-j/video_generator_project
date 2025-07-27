@@ -1,0 +1,19 @@
+.idea
+build_aeneas
+build_aeneas_test
+build_mfa
+tmp_work
+.DS_Store
+aeneas_test.py
+narration_16k.wav
+out_words.json
+script_words.txt
+project_structure.txt
+Free To Use Subway Surfers Gameplay For TikTok By Top 20 Global Player!.mp4
+background_music/.DS_Store
+brainrot_videos/.DS_Store
+output/.DS_Store
+used_scripts/.DS_Store
+video_generator/.DS_Store
+tools/aeneas_align.py
+tools/piper_tts.py

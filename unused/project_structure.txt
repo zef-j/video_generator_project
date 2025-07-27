@@ -1,0 +1,167 @@
+.
+├── .DS_Store
+├── .idea
+│   ├── .gitignore
+│   ├── inspectionProfiles
+│   │   ├── Project_Default.xml
+│   │   └── profiles_settings.xml
+│   ├── misc.xml
+│   ├── modules.xml
+│   ├── vcs.xml
+│   ├── video_generator_project.iml
+│   └── workspace.xml
+├── .python-version
+├── Free To Use Subway Surfers Gameplay For TikTok By Top 20 Global Player!.mp4
+├── README.md
+├── aeneas_test.py
+├── background_music
+│   ├── .DS_Store
+│   └── MELANCHOLIA Music Box Sad, creepy song.mp3
+├── brainrot_videos
+│   ├── .DS_Store
+│   └── Design sans titre (4).mp4
+├── build_aeneas
+│   ├── .DS_Store
+│   ├── alignment_sentences.srt
+│   ├── alignment_words.json
+│   ├── narration_raw.aiff
+│   ├── narration_raw.wav
+│   ├── script_plain.txt
+│   ├── script_utf8.txt
+│   ├── tmp
+│   │   ├── .DS_Store
+│   │   └── vg_0ew5bu8o
+│   │       ├── audio.wav
+│   │       ├── narration.wav
+│   │       ├── narration_16k.wav
+│   │       ├── narration_raw.aiff
+│   │       ├── out_words.json
+│   │       ├── script_plain.txt
+│   │       ├── script_sentences.txt
+│   │       └── script_words.txt
+│   ├── words.txt
+│   ├── words_linearized.json
+│   └── words_preview.json
+├── build_aeneas_test
+│   ├── alignment.json
+│   ├── audio.wav
+│   ├── diag_sent-level1-py_stderr.txt
+│   ├── diag_sent-level1-py_stdout.txt
+│   ├── diag_sent-level1_stderr.txt
+│   ├── diag_sent-level1_stdout.txt
+│   ├── diag_sent_min_stderr.txt
+│   ├── diag_sent_min_stdout.txt
+│   ├── diag_stderr.txt
+│   ├── diag_stdout.txt
+│   ├── diag_words-level1-py_stderr.txt
+│   ├── diag_words-level1-py_stdout.txt
+│   ├── diag_words-level1_stderr.txt
+│   ├── diag_words-level1_stdout.txt
+│   ├── preview.json
+│   ├── script_plain.txt
+│   ├── script_sentences.txt
+│   ├── script_words.txt
+│   ├── sentences.srt
+│   └── words.json
+├── build_mfa
+│   ├── .DS_Store
+│   ├── aligned
+│   ├── corpus
+│   │   ├── audio.lab
+│   │   └── audio.wav
+│   ├── mfa_cache
+│   ├── models
+│   └── narration_raw.aiff
+├── main.py
+├── narration_16k.wav
+├── out_words.json
+├── output
+│   ├── .DS_Store
+│   ├── test copy 2_20250727_131547.mp4
+│   ├── test copy_20250727_131036.mp4
+│   ├── test copy_20250727_132231.mp4
+│   ├── test copy_20250727_132437.mp4
+│   └── test_20250727_133045.mp4
+├── project_structure.txt
+├── requirements.txt
+├── script_words.txt
+├── scripts
+│   └── .DS_Store
+├── tmp_work
+│   ├── .DS_Store
+│   ├── vg_0ew5bu8o
+│   │   ├── audio.wav
+│   │   ├── narration.wav
+│   │   ├── narration_16k.wav
+│   │   ├── narration_raw.aiff
+│   │   ├── out_words.json
+│   │   ├── script_plain.txt
+│   │   ├── script_sentences.txt
+│   │   └── script_words.txt
+│   ├── vg_2o126uq5
+│   │   ├── narration.wav
+│   │   ├── narration_16k.wav
+│   │   ├── narration_raw.aiff
+│   │   ├── out_words.json
+│   │   ├── script_plain.txt
+│   │   └── script_words.txt
+│   ├── vg_kkjonlz7
+│   │   ├── narration.wav
+│   │   ├── narration_16k.wav
+│   │   ├── narration_raw.aiff
+│   │   ├── out_words.json
+│   │   ├── script_plain.txt
+│   │   └── script_words.txt
+│   ├── vg_lmtnek6d
+│   │   ├── narration.wav
+│   │   ├── narration_16k.wav
+│   │   ├── narration_raw.aiff
+│   │   ├── out_words.json
+│   │   ├── script_plain.txt
+│   │   ├── script_sentences.txt
+│   │   ├── script_words.txt
+│   │   └── temp-audio.m4a
+│   ├── vg_o04ny7t9
+│   │   ├── .keep
+│   │   ├── narration.wav
+│   │   ├── narration_16k.wav
+│   │   └── narration_raw.aiff
+│   ├── vg_p7nf872g
+│   │   ├── narration.wav
+│   │   ├── narration_16k.wav
+│   │   ├── narration_raw.aiff
+│   │   ├── out_words.json
+│   │   ├── script_plain.txt
+│   │   ├── script_sentences.txt
+│   │   └── script_words.txt
+│   ├── vg_yq11vl17
+│   │   ├── narration.wav
+│   │   ├── narration_16k.wav
+│   │   ├── narration_raw.aiff
+│   │   ├── out_words.json
+│   │   ├── script_plain.txt
+│   │   └── script_words.txt
+│   └── vg_zr6r8rfw
+│       ├── narration.wav
+│       ├── narration_16k.wav
+│       ├── narration_raw.aiff
+│       ├── out_words.json
+│       ├── script_plain.txt
+│       ├── script_sentences.txt
+│       └── script_words.txt
+├── tools
+│   ├── Dockerfile.aeneas
+│   ├── aeneas_align.py
+│   ├── docker_entrypoint.sh
+│   └── piper_tts.py
+├── used_scripts
+│   ├── .DS_Store
+│   ├── test copy 2.txt
+│   ├── test copy.txt
+│   └── test.txt
+└── video_generator
+    ├── .DS_Store
+    ├── __init__.py
+    └── pipeline.py
+
+28 directories, 137 files

@@ -1,0 +1,8 @@
+[93m[WARN] The default input encoding is not UTF-8.[0m
+[93m[WARN] You might want to set 'PYTHONIOENCODING=UTF-8' in your shell.[0m
+[93m[WARN] The default output encoding is not UTF-8.[0m
+[93m[WARN] You might want to set 'PYTHONIOENCODING=UTF-8' in your shell.[0m
+[INFO] Validating config string (specify --skip-validator to bypass)...
+[91m[ERRO] The given config string is not valid:[0m
+Errors:
+  Parameter 'task_adjust_boundary_beforenext_value' is required when 'task_adjust_boundary_algorithm'='beforenext'.
